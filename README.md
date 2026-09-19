@@ -18,7 +18,11 @@ YOLOv10-PSA-DAT 核心创新点
 数据集名称	包含类别	图像总数	图像分辨率	数据分布（训练:验证:测试）
 Our fall detection	Standing、Fall	4213	统一resize至适配模型输入	7:2:1
 3.2 数据集获取与结构
+为进一步增强模型可比性与泛化能力，本研究融合了两个公开摔倒检测数据集作为自建数据的补充：
 
+LE2I with Upright and Fall：基于原始 LE2I 基准构建，包含日常活动与突发摔倒等多样室内场景（https://universe.roboflow.com/new-workspace-qfcus/le2i-with-upright-and-fall/dataset/2）。
+
+Falldown Detection F8XTB：以体育场、运动场等室外场景的标注网络图像为主（https://universe.roboflow.com/kid-g8rt3/falldown-detection-f8xtb/dataset/1）。
 文件夹组织（下载后解压至项目根目录，结构如下）：
 
 our_fall_detection/
